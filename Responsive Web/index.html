@@ -20,13 +20,13 @@
           <li><a href="#">Characters</a></li>
           <li><a href="#">Story</a></li>
           <li><a href="#">Palaces</a></li>
-          <li><a href="#">Soundtrack</a></li>
+          <li><a href="#soundtrack">Soundtrack</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main>
+  <main id="main-content">
     <!-- Hero Section -->
     <section>
       <div class="container">
@@ -36,8 +36,8 @@
         <p>
           In "Persona 5 Royal", you become Joker — a masked vigilante who joins a group of students calling themselves the Phantom Thieves of Hearts. Dive into an unforgettable blend of turn-based combat, social simulation, and narrative depth as you challenge the corruption plaguing society.
         </p>
-        <a href="#" class="btn btn-dark">Meet the Cast</a>
-        <a href="#" class="btn btn-mid">Watch the Trailer</a>
+        <a href="/cast.html" class="btn btn-dark">Meet the Cast</a>
+        <a href="#" id="ads-btn" class="btn btn-mid">Watch the Trailer</a>
       </div>
     </section>
 
@@ -66,7 +66,7 @@
     </section>
 
     <!-- Soundtrack Section -->
-    <section>
+    <section id="soundtrack">
       <div class="container">
         <h2>The Sound of Rebellion</h2>
         <img src="images/soundtrack.jpg" alt="Persona 5 Royal Soundtrack Cover" class="main-image">
@@ -74,11 +74,25 @@
         <p>
           The soundtrack of "Persona 5 Royal", composed by Shoji Meguro and Lyn, is a genre-defying masterpiece. From battle themes like "Take Over" to emotional tracks like "I Believe," the music enhances every moment.
         </p>
-        <a href="https://www.youtube.com/watch?v=xzP-8gW4nC0" target="_blank" class="btn btn-dark">Listen on YouTube</a>
+        <a href="https://www.youtube.com/watch?v=vWWy7V9rCrA" target="_blank" class="btn btn-dark">Listen on YouTube</a>
         <a href="#" class="btn btn-mid">Full Tracklist</a>
       </div>
     </section>
   </main>
+
+  <!-- Trailer Modal--> 
+<div id="trailer-modal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <iframe 
+      src="https://www.youtube.com/embed/SKpSpvFCZRw"
+      title="Persona 5 Royal Trailer" 
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen>
+    </iframe>
+  </div>
+</div>
 
   <footer>
     <div class="container">

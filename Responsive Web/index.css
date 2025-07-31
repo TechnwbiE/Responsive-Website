@@ -7,6 +7,11 @@ body {
     margin: 0;
 }
 
+
+.modal-trailer {
+    display: none;
+}
+
 /* ----- TYPOGRAPHY ----- */
 
 h1, h3 {
@@ -88,6 +93,55 @@ a:active {
 .btn:active {
     color: #ffffff;
     background-color: #a90000;
+}
+
+/* ----- Trailer Modal ----- */
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.85);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #111;
+  padding: 0;
+  border-radius: 8px;
+  max-width: 90%;
+  width: 90%;
+  position: relative;
+  box-shadow: 0 0 20px #000;
+}
+
+.modal-content iframe {
+  display: block;
+  width: 100%;
+  max-width: 800px;
+  aspect-ratio: 16 / 9;
+  border: none;
+  margin: 0 auto;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: #fff;
+  font-size: 28px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+/* Optional: Smooth filter on background */
+#main-content {
+  transition: filter 0.3s ease;
 }
 
 /* ----- LAYOUT ----- */
@@ -180,7 +234,7 @@ ul {
 
     li:not(:last-child) {
         border-bottom: 1px dotted #888c8f;
-    }
+    }  
 }
 
 @media (min-width: 768px) {
@@ -230,4 +284,18 @@ ul {
         display: flex;
         flex-direction: column;
     }
+
+    .modal-content {
+    background-color: #111;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 800px;
+    box-shadow: 0 0 20px #000;
+    }
+
+    .modal-content iframe {
+     width: 100%;
+     border: none;
+     margin: 0 auto;
+}
 }
