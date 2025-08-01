@@ -7,11 +7,6 @@ body {
     margin: 0;
 }
 
-
-.modal-trailer {
-    display: none;
-}
-
 /* ----- TYPOGRAPHY ----- */
 
 h1, h3 {
@@ -233,7 +228,7 @@ ul {
     }
 
     li:not(:last-child) {
-        border-bottom: 1px dotted #888c8f;
+        border-bottom: 1px solid #888c8f;
     }  
 }
 
